@@ -4,7 +4,7 @@ This is a copy of [The game of life](https://en.wikipedia.org/wiki/Conway%27s_Ga
 </br>
 A huge thanks to [jadi](https://github.com/jadijadi) that gave me the idea.
 
-## How to build it your slef
+## How to build it your self
 ### On unix based oprating systems.
 1. Download and install gnu make and a C compiler like clang.
 2. cd into the games directory and Run the make command.
