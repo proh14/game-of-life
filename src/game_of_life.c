@@ -14,13 +14,19 @@
  *  this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
+#define _DEFAULT_SOURCE
+#define _BSD_SOURCE
+#define _GNU_SOURCE
+
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #ifdef _WIN32
+#define CLEAR "cls"
 #include <windows.h>
 #else
+#define CLEAR "clear"
 #include <unistd.h>
 #endif
 
@@ -46,7 +52,7 @@ int main(void) {
   return 0;
 }
 void draw() {
-  printf("\033[H");
+  system(CLEAR);
   for (int i = 0; i < W; i++) {
     for (int j = 0; j < H; j++) {
       printf("%c", world[i][j]);
