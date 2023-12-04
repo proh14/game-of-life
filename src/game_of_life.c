@@ -18,7 +18,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#ifdef _WIN32
+#include <windows.h>
+#else
 #include <unistd.h>
+#endif
 
 #define W 30
 #define H 30
@@ -37,7 +41,7 @@ int main(void) {
   while (1) {
     draw();
     evolution();
-    usleep(1000000);
+    sleep(1);
   }
   return 0;
 }
