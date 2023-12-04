@@ -12,6 +12,6 @@ A huge thanks to [jadi](https://github.com/jadijadi) that gave me the idea.
 
 ### On windows.
 1. Download and install mingw.
-2. goto the games folder and open a new terminal there.
+2. goto the games folder and open a new mingw bash there.
 3. run mingw32-make.exe
 3. Run the game! type ``game_of_life.exe``
